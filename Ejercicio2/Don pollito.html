@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<html>
+	<head>
+        <title>Taller 2 Restaurante don pollito</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="estilo.css">
+	</head>
+	<body>
+        <div id="Total">
+
+            <h1 >Restaurante Don pollito</h1>
+
+            <form name="everything">
+                <fieldset>
+                    <legend>Combos y productos</legend>
+                <ul class="Combos">
+                 <li>
+                 <label for="extras">Nuestros combos principales son:</label>
+                 </li>
+                 <li>
+                 <input type="radio" name="CombosGrande" value="Super combo" />
+                 <label title="Tres piezas de pollo, ensalada, papas fritas y bebida grande de su elección que tiene un precio de $7.25">Super combo</label>
+                 </li>
+                 <li>
+                 <input type="radio" name="CombosPersonal" value="Combo personal" />
+                 <label title="Dos piezas de pollo, papa frita y bebida mediana  con un precio de $5.75">Combo personal</label>
+                 </li>
+                 <li>
+                 <input type="radio" name="CombosInfantil" value="Combo infantil" />
+                 <label title="1 pieza de pollo, papas fritas y una bebida pequeña a un precio de $3.50 ">Combo infantil</label>
+                 </li>
+                 </ul>
+                 <ul class="ProductosPrincipales">
+                 <li>
+                 <label for="Productos">Productos</label>
+                 </li>
+                 <li>
+                    [1] <input type="checkbox" name="Producto1" value="Ensalada">
+                 <label title="Su precio es: $1.50">Ensalada</label>
+                 </li>
+                 <li>
+                    [2]<input type="checkbox" name="Producto2" value="Papa Frita">
+                 <label title="Su precio es: $1.25">Papa Frita</label>
+                 </li>
+                 <li>
+                    [3]<input type="checkbox" name="Producto3" value="Pollo grande">
+                 <label title="Su precio es: $1.75">Pieza de pollo grande</label>
+                 </li>
+                 <li>
+                    [4]<input type="checkbox" name="Producto4" value="Pollo mediano">
+                 <label title="Su precio es: $1.50">Pieza de pollo mediana</label>
+                 </li>
+                 <li>
+                    [5]<input type="checkbox" name="Producto5" value="Pollo pequeño">
+                 <label title="Su precio es: $1.25">Pieza de pollo pequeña</label>
+                 </li>
+                 <li>
+                    [6]<input type="checkbox" name="Producto6" value="Bebida Grande">
+                 <label title="Su precio es: $1.50" >Bebida Grande</label>
+                 </li>
+                 <li>
+                    [7]<input type="checkbox" name="Producto7" value="Bebida Mediana">
+                 <label title="Su precio es: $1.25">Bebida Mediana</label>
+                 </li>
+                 <li>
+                    [8] <input type="checkbox" name="Producto8" value="Bebida Pequeña">
+                 <label title="Su precio es: $1.00">Bebida Pequeña</label>
+                 </li>
+                 <li>
+                    [9] <input type="checkbox" name="Producto9" value="Cafe">
+                 <label title="Su precio es: $0.50">Cafe</label>
+                 </li>
+                 <li>
+                    [10] <input type="checkbox" name="Producto10" value="Postre">
+                 <label title="Su precio es: $1.25">Postre</label>
+                 </li>
+                 </ul>
+                 <ul class="Sugerencia">
+                    <label>Sugerencias</label>
+                    <li>       
+                    <textarea name="textarea" placehold="Eventos capturados"></textarea>
+
+                    </li>
+                   </ul>
+                    <label>El monto total de tu compra es: $</label>
+                    <input type="text" name="pagar" placeholder="Total a pagar" />
+                    <input type="button" value="imprimir" name="imprimirCompra" />
+                </fieldset>
+            </form>
+            <div class="detalles" id="Detalles" style="display: none">
+                <label>aqui van los detalles de la compra</label>
+            </div>
+        </div>
+
+	</body>
+</html>
