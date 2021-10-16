@@ -4,22 +4,23 @@
 	<head>
         <title>Taller 2 Restaurante don pollito</title>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="estilo.css">
+        <link rel="stylesheet" href="css/estilo.css">
 	</head>
 	<body>
         <div id="Total">
 
-            <h1 >Restaurante Don pollito</h1>
+            <h1 class="header" >Restaurante Don pollito</h1>
 
-            <form name="everything">
-                <fieldset>
+            <form name="everything" id="container">
+                <fieldset id="menu">
                     <legend>Combos y productos</legend>
                 <ul class="Combos">
                  <li>
                  <label for="extras">Nuestros combos principales son:</label>
+                 <br>
                  </li>
                  <li>
-                 <input type="radio" name="CombosGrande" value="Super combo" />
+                 <input type="radio" name="CombosGrande" value="Super combo" checked/>
                  <label title="Tres piezas de pollo, ensalada, papas fritas y bebida grande de su elección que tiene un precio de $7.25">Super combo</label>
                  </li>
                  <li>
@@ -82,10 +83,12 @@
                     <textarea name="textarea" placehold="Eventos capturados"></textarea>
 
                     </li>
-                   </ul>
-                    <label>El monto total de tu compra es: $</label>
-                    <input type="text" name="pagar" placeholder="Total a pagar" />
-                    <input type="button" value="imprimir" name="imprimirCompra" />
+                  </ul>
+                  <div id="monto">
+                     <label>El monto total de tu compra es: $</label>
+                     <input type="text" name="pagar" placeholder="Total a pagar" />
+                     <input type="button" value="Imprimir" name="imprimirCompra" />  
+                  </div>
                 </fieldset>
             </form>
             <div class="detalles" id="Detalles" style="display: none">
