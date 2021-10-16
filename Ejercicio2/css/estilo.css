@@ -50,6 +50,14 @@ li{
     list-style: none;
 }
 
+.Combos li{
+    display: inline-block;
+}
+
+label#combo{
+    display: block;
+}
+
 .ProductosPrincipales{
     padding-top: 2%;
     padding-bottom: 1.5%;
@@ -67,9 +75,9 @@ li{
 }
 
 input[type="button"]{
-    border-color: #0D6EFD;
+    border-color: #093400;
     background-color: transparent;
-    color: #0D6EFD;
+    color: #093400;
     padding: 2.5px;
     border-radius: 5px;
 }
