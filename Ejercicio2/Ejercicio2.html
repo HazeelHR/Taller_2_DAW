@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<html>
+	<head>
+      <title>Taller 2 Restaurante don pollito</title>
+      <meta charset="utf-8" />
+      <link rel="stylesheet" href="css/estilo.css">
+      <script src="js/Ejercicio2.js"></script>
+   </head>
+   <body>
+
+      <!--Contenedor principal-->
+      <div id="Total">
+
+         <!--Titulo del restaurante-->
+         <h1 class="header" >Restaurante Don pollito</h1>
+
+         <!--formulario para solicitar los datos-->
+         <form name="everything" id="container">
+            <fieldset id="menu">
+               <legend>Combos y productos</legend>
+
+               <!--Lista con los combos que posee el restaurante-->
+               <ul class="Combos">
+                  <li>
+                     <label for="extras">Nuestros combos principales son:</label>
+                  </li>
+                  <li>                        
+                     <input type="checkbox" class="rbt" id="rb1" name="CombosGrande" value="Super combo" checked>
+                     <label title="Tres piezas de pollo, ensalada, papas fritas y bebida grande de su elección que tiene un precio de $7.25">Super combo</label>
+                  </li>
+                  <li>
+                     <input type="checkbox" class="rbt" id="rb2" name="CombosPersonal" value="Combo personal" />
+                     <label title="Dos piezas de pollo, papa frita y bebida mediana  con un precio de $5.75">Combo personal</label>
+                  </li>
+                  <li>
+                     <input type="checkbox" class="rbt" id="rb3" name="CombosInfantil" value="Combo infantil" unchecked />
+                     <label title="1 pieza de pollo, papas fritas y una bebida pequeña a un precio de $3.50 ">Combo infantil</label>
+                  </li>
+               </ul>
+
+               <!--lista con los productos adicionales que ofrece el restaurante-->
+               <ul class="ProductosPrincipales">
+                  <li>
+                     <label for="Productos">Productos</label>
+                  </li>
+                  <li>
+                     [1] <input type="checkbox" class="rbt" id="rb4" name="Producto1" value="Ensalada">
+                     <label title="Su precio es: $1.50">Ensalada</label>
+                  </li>
+                  <li>
+                     [2]<input type="checkbox" class="rbt" id="rb5" name="Producto2" value="Papa Frita">
+                     <label title="Su precio es: $1.25">Papa Frita</label>
+                  </li>
+                  <li>
+                     [3]<input type="checkbox" class="rbt" id="rb6" name="Producto3" value="Pollo grande">
+                     <label title="Su precio es: $1.75">Pieza de pollo grande</label>
+                  </li>
+                  <li>
+                     [4]<input type="checkbox" class="rbt" id="rb7" name="Producto4" value="Pollo mediano">
+                     <label title="Su precio es: $1.50">Pieza de pollo mediana</label>
+                  </li>
+                  <li>
+                     [5]<input type="checkbox" class="rbt" id="rb8" name="Producto5" value="Pollo pequeño">
+                     <label title="Su precio es: $1.25">Pieza de pollo pequeña</label>
+                  </li>
+                  <li>
+                     [6]<input type="checkbox" class="rbt" id="rb9" name="Producto6" value="Bebida Grande">
+                     <label title="Su precio es: $1.50" >Bebida Grande</label>
+                  </li>
+                  <li>
+                     [7]<input type="checkbox" class="rbt" id="rb10" name="Producto7" value="Bebida Mediana">
+                     <label title="Su precio es: $1.25">Bebida Mediana</label>
+                  </li>
+                  <li>
+                     [8] <input type="checkbox" class="rbt" id="rb11" name="Producto8" value="Bebida Pequeña">
+                     <label title="Su precio es: $1.00">Bebida Pequeña</label>
+                  </li>
+                  <li>
+                     [9] <input type="checkbox" class="rbt" id="rb12" name="Producto9" value="Cafe">
+                     <label title="Su precio es: $0.50">Cafe</label>
+                  </li>
+                  <li>
+                     [10] <input type="checkbox" class="rbt" id="rb13" name="Producto10" value="Postre">
+                     <label title="Su precio es: $1.25">Postre</label>
+                  </li>
+               </ul>
+
+               <!--Area donde podra ingresar sugerencias el usuario-->
+               <ul class="Sugerencia">
+                  <label>Sugerencias</label>
+                  <li>   
+                     <div id="suger"></div>    
+                     <textarea name="message" id="mensaje" value="Tu sugerencia"></textarea>
+                     
+                  </li>
+               </ul>
+
+               <!--input para mostrar el total a pagar-->
+
+               <label>El monto total de tu compra es: $</label>
+               <input type="text" id="totalpagar" name="pagar" placeholder="Total a pagar" />
+
+               <!--boton para enviar los datos-->
+               <input type="button" id="benviar" value="imprimir" name="imprimirCompra" />
+            </fieldset>
+         </form>
+
+         <!--contenedor para mostrar los detalles de la compra-->
+         <div class="detalles" id="Detalles">         
+         </div>
+
+      </div>
+
+   </body>
+</html>
