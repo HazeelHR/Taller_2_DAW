@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+body {
+    /* Old browsers */
+    background: #201f1f; 
+}
+#wrapper {
+    margin: 0 auto;
+    max-width: 1120px;
+    width: 88%;
+}
+header h1 {
+    text-align: center;
+    margin: 12px auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3.8em;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-shadow: 5px 5px 0px rgb(24, 89, 119), 7px 7px 0px #707070;
+}
+
+img{
+    height: 200px;
+    width: 350px;
+    margin-left: 100px;
+}
+
+h5{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.8em;
+}
+
+.card-body{
+    text-align: left;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 610px;
+    margin-top: -202px;
+    margin-bottom: 90px;
+}
+
+.duration{
+    margin-left: 200px;
+    margin-top: -17px;
+}
+
+.tabla{
+    border-color: white;
+    margin-top: 20px;
+}
+
+td{
+    padding: 10px;
+}
